@@ -1,3 +1,11 @@
-node_modules
-lib
+*~
+*.swp
+.DS_Store
+Thumbs.db
+node_modules/*
+docs/out
+out
+lcov-report
+lcov.info
+npm-*
 dist
