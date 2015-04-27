@@ -1,0 +1,32 @@
+{
+  "name": "svg",
+  "version": "2.6.0-dev",
+  "description": "svg",
+  "main": "index.js",
+  "bugs": "http://jira.enyojs.com/",
+  "scripts": {
+    "test": "echo 'No testing suite. Bummer!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enyojs/svg.git"
+  },
+  "maintainers": [
+    {
+      "name": "Enyo JS Framework Team",
+      "web": "http://enyojs.com/"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "homepage": "https://github.com/enyojs/svg",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "jshint-stylish": "^1.0.1"
+  }
+}

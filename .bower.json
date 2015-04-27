@@ -1,0 +1,51 @@
+{
+  "name": "enyo-webos",
+  "main": [
+    "index.js",
+    "lib"
+  ],
+  "homepage": "https://github.com/enyojs/enyo",
+  "authors": [
+    {
+      "name": "EnyoJS Framework Team",
+      "homepage": "http://enyojs.com/"
+    }
+  ],
+  "description": "",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "JavaScript",
+    "framework",
+    "js",
+    "javascript",
+    "library",
+    "enyo",
+    "enyojs",
+    "Enyo",
+    "EnyoJS",
+    "webos",
+    "WebOS",
+    "toolkit",
+    "components",
+    "mobile"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "docs"
+  ],
+  "_release": "b6e08415a0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "2.6.0-dev",
+    "commit": "b6e08415a06526b82fef2ef3a77e7dad35f5c2b0"
+  },
+  "_source": "git@github.com:enyojs/enyo-webos.git",
+  "_target": "2.6.0-dev",
+  "_originalSource": "git@github.com:enyojs/enyo-webos.git",
+  "_direct": true
+}
