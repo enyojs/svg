@@ -5,14 +5,14 @@
     "lib"
   ],
   "version": "2.6.0",
-  "homepage": "https://github.com/enyojs/enyo",
+  "homepage": "https://github.com/enyojs/svg",
   "authors": [
     {
       "name": "EnyoJS Framework Team",
       "homepage": "http://enyojs.com/"
     }
   ],
-  "description": "",
+  "description": "Easily create SVGs, dynamically using Enyo",
   "moduleType": [
     "node"
   ],
@@ -30,7 +30,14 @@
     "SVG",
     "toolkit",
     "components",
-    "mobile"
+    "mobile",
+    "svg",
+    "SVG",
+    "scalable",
+    "vector",
+    "vectors",
+    "graphic",
+    "graphics"
   ],
   "license": "Apache-2.0",
   "ignore": [
