@@ -1,5 +1,5 @@
 {
-  "name": "svg",
+  "name": "enyo-svg",
   "main": [
     "index.js",
     "lib"
