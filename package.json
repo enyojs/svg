@@ -1,8 +1,12 @@
 {
   "name": "svg",
+  "assets": [],
+  "devAssets": [],
+  "styles": [],
+  "main": "index.js",
+  "moduleDir": "src",
   "version": "2.6.0-dev",
   "description": "Easily create SVGs, dynamically using Enyo",
-  "main": "index.js",
   "bugs": "http://jira.enyojs.com/",
   "scripts": {
     "test": "echo 'No testing suite. Bummer!'"
