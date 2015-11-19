@@ -1,3 +1,3 @@
 'use strict';
 
-exports.version = '2.6.0-pre.20';
+exports.version = '2.6.0-pre.20.1';
