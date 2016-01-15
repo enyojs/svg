@@ -6,7 +6,7 @@
   "main": "index.js",
   "moduleDir": "src",
   "version": "2.6.0-dev",
-  "description": "Easily create SVGs, dynamically using Enyo",
+  "description": "Easily create SVGs dynamically, using Enyo",
   "bugs": "http://jira.enyojs.com/",
   "scripts": {
     "test": "echo 'No testing suite. Bummer!'"
@@ -21,12 +21,7 @@
       "web": "http://enyojs.com/"
     }
   ],
-  "licenses": [
-    {
-      "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
-  ],
+  "license": "Apache-2.0",
   "homepage": "https://github.com/enyojs/svg",
   "devDependencies": {
     "gulp": "^3.8.11",
