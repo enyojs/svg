@@ -12,8 +12,6 @@ var
 	svgUtil = require('./utils')
 	;
 
-// console.log( "WTF IS WRONG");
-
 // Base-kind for deriving all SVG kinds
 module.exports = kind({
 	name: 'Element',
@@ -26,7 +24,7 @@ module.exports = kind({
 		attrs.conditionalProcessing,
 		[
 			'space',
-			'target', // Synnonym for xlink:href
+			'target', // Synonym for xlink:href
 			'transform',
 			'externalResourcesRequired'
 		]
@@ -44,7 +42,6 @@ module.exports = kind({
 
 		if (this.supportedAttributes) {
 			this.supportedAttributes.forEach(this.bindSafely(function (attr) {
-				// console.log("setting %s because its supported.", attr);
 				// Specially cased and aliased attributes
 				switch (attr) {
 					case 'space':
@@ -90,7 +87,7 @@ module.exports = kind({
 			attrs = this.supportedAttributes;
 
 		if (attrs && attrs.indexOf(attr) >= 0) {
-			// Transforms are special conditioning fro just the attribute conversion and application process.
+			// Transforms are special conditioning for just the attribute conversion and application process.
 			if (this.transforms && this.transforms[attr]) {
 				val = this.bindSafely(this.transforms[attr])(val, attr);
 			}
