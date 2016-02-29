@@ -9,7 +9,7 @@
   "description": "Easily create SVGs dynamically, using Enyo",
   "bugs": "http://jira.enyojs.com/",
   "scripts": {
-    "test": "echo 'No testing suite. Bummer!'"
+    "test": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
