@@ -30,11 +30,13 @@ module.exports = kind({
 		]
 	),
 	transforms: {
-		target: function (control) {
-			control = this.bindSafely(svgUtil.getId)(control);
+		target: function (controlName) {
+			var control = this.bindSafely(svgUtil.getId)(controlName);
 			if (control) {
-				this.setAttribute('xlink:href', '#' + control);
+				control = '#' + control;
 			}
+			// If we can't find the control is likely a URL, use it instead
+			this.setAttribute('xlink:href', control || controlName);
 		}
 	},
 	create: function () {
