@@ -1,3 +1,7 @@
+/**
+* Contains the declaration for the {@link module:svg/Element~Element} kind.
+* @module svg/Element
+*/
 require('svg');
 
 var
@@ -12,13 +16,66 @@ var
 	svgUtil = require('./utils')
 	;
 
+/**
+* {@link module:svg/Element~Element} is a kind that serves as a Base-kind for all SVG kinds.
+*
+* ```javascript
+* 	var
+* 		Element = require('enyo/Element');
+*
+* 	var
+* 		module.exports = kind({
+* 			name: 'Pattern',
+* 			kind: Element,
+* 			tag: 'pattern',
+* 			supportedAttributes: utils.merge(
+* 			attrs.presentation,
+* 				[
+* 					'viewBox',
+* 					'patternUnits',
+* 					'patternContentUnits',
+* 					'patternTransform',
+* 					'x',
+* 					'y',
+* 					'width',
+* 					'height',
+* 					'preserveAspectRatio'
+* 				]
+* 			)
+* 		});
+* ```
+*
+* @class Element
+* @extends module:enyo/Control~Control
+* @ui
+* @public
+*/
+
 // Base-kind for deriving all SVG kinds
 module.exports = kind({
+	/**
+	* @private
+	*/
 	name: 'Element',
+	/**
+	* @private
+	*/
 	kind: Control,
+	/**
+	* @private
+	*/
 	tag: 'svg',
+	/**
+	* @private
+	*/
 	_allSupportedAttributes: null,
+	/**
+	* @private
+	*/
 	noDefer: true,
+	/**
+	* @private
+	*/
 	mixins: [EventEmitter],
 	supportedAttributes: util.merge(
 		attrs.conditionalProcessing,
@@ -30,6 +87,13 @@ module.exports = kind({
 		]
 	),
 	transforms: {
+		/**
+	    * A property to define attributeName
+	    *
+	    * @type {String}
+	    * @default 'd'
+	    * @public
+	    */
 		target: function (controlName) {
 			var control = this.bindSafely(svgUtil.getId)(controlName);
 			if (control) {
@@ -39,6 +103,9 @@ module.exports = kind({
 			this.setAttribute('xlink:href', control || controlName);
 		}
 	},
+	/**
+	* @private
+	*/
 	create: function () {
 		this.inherited(arguments);
 
@@ -55,6 +122,9 @@ module.exports = kind({
 			}));
 		}
 	},
+	/**
+	* @private
+	*/
 	rendered: function () {
 		var n = this.hasNode(),
 			f = this;
@@ -75,6 +145,9 @@ module.exports = kind({
 		}
 		this.inherited(arguments);
 	},
+	/**
+	* @private
+	*/
 	set: function (attr, value) {
 		this.setSupportedAttribute(arguments);
 
@@ -82,6 +155,9 @@ module.exports = kind({
 			this.inherited(arguments);
 		}
 	},
+	/**
+	* @private
+	*/
 	setSupportedAttribute: function (args) {
 		var attr = args && args[0],
 			value = args && args[1],
