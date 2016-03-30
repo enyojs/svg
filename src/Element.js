@@ -176,11 +176,7 @@ module.exports = kind({
 });
 
 /**
-* By default, we capture `ondown` and `ontap` to implement the [popup's]{@link enyo.Popup}
-* modal behavior, but in certain circumstances it may be necessary to capture other
-* [events]{@glossary event} as well, so we provide this hook to extend. (We are currently
-* using this in Moonstone to capture `onSpotlightFocus` [events]{@glossary event}).
-*
+* This method provides a hook to merge the supportedAttributes object on derived kinds.
 * @private
 */
 module.exports.concat = function (ctor, props, instance) {
